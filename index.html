@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222">
+    <meta name="description" content="Каталог сундуков ручной работы. Выберите модель и оставьте заявку на изготовление.">
+    <title>Сундуки ручной работы — каталог</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/catalog.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к каталогу</a>
+    <header class="topbar">
+      <div class="top-inner">
+        <a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark" aria-hidden="true">Д</span><span>ТЕКСТ ДЛЯ ЗАМЕНЫ</span></a>
+        <label class="search"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Поиск по каталогу</span><input id="catalog-search" type="search" placeholder="Поиск по каталогу"></label>
+        <span class="topspacer"></span>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню"><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Навигация" hidden>
+        <a href="#catalog">Каталог</a><a href="#about-card">Обо мне</a><a href="#contact-card">Контакты</a>
+      </nav>
+    </header>
+
+    <div class="shell">
+      <aside class="nav" aria-label="Разделы сайта">
+        <a class="navitem" href="#page-title"><span class="navicon" aria-hidden="true">◎</span>Мастерская</a>
+        <a class="navitem navitem--active" href="#catalog"><span class="navicon" aria-hidden="true">▣</span>Каталог</a>
+        <div class="navline"></div>
+        <p class="navsmall">Сундуки ручной работы</p>
+      </aside>
+
+      <main class="page" id="main">
+        <section class="cover" aria-label="Обложка мастерской — временная заглушка">
+          <span class="cover-caption">Обложка мастерской · временная заглушка</span>
+          <span class="cover-mark" aria-hidden="true">✳</span>
+        </section>
+        <section class="grouphead" aria-labelledby="page-title">
+          <h1 class="groupname" id="page-title">Сундуки ручной работы</h1>
+        </section>
+
+        <section class="card catalog" id="catalog" aria-labelledby="catalog-title">
+          <div class="catalog-topline">
+            <h2 id="catalog-title">Каталог товаров</h2>
+            <label class="sort-control" for="sort-products"><span class="sr-only">Сортировка</span>
+              <select id="sort-products" name="sort">
+                <option value="featured">По подборке</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="name">По названию</option>
+              </select>
+            </label>
+          </div>
+          <p class="catalog-count" id="catalog-count" aria-live="polite">20 моделей</p>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <noscript><p class="notice">Для отображения каталога включите JavaScript в браузере.</p></noscript>
+        </section>
+        <footer class="page-footer"><span>ТЕКСТ ДЛЯ ЗАМЕНЫ</span><a href="#main">Наверх ↑</a></footer>
+      </main>
+      <aside class="info-column" aria-label="О мастерской и контакты">
+        <section class="card info-card" id="about-card">
+          <h2>Обо мне</h2>
+          <p id="about-copy">Информация о мастере будет добавлена позже.</p>
+        </section>
+        <section class="card info-card" id="contact-card">
+          <h2>Контактная информация</h2>
+          <div class="info-row"><span class="info-icon" aria-hidden="true">☎</span><span data-contact="phone">Добавить телефон</span></div>
+          <div class="info-row"><span class="info-icon" aria-hidden="true">✉</span><span data-contact="email">Добавить электронную почту</span></div>
+        </section>
+        <section class="card info-card channels-card" aria-labelledby="channels-title">
+          <h2 id="channels-title">Каналы</h2>
+          <div class="info-row"><span class="info-icon" aria-hidden="true">➤</span><span data-channel="telegram">Добавить ссылку на Telegram</span></div>
+          <div class="info-row"><span class="info-icon" aria-hidden="true">◉</span><span data-channel="vk">Добавить ссылку ВКонтакте</span></div>
+          <div class="info-row"><span class="info-icon" aria-hidden="true">↗</span><span data-channel="other">Добавить другую ссылку</span></div>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>

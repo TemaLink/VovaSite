@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222">
+    <meta name="description" content="Сундук ручной работы: галерея изображений, характеристики и заявка на изготовление.">
+    <title>Сундук — ТЕКСТ ДЛЯ ЗАМЕНЫ</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/product.js" defer></script>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/request.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к товару</a>
+    <header class="topbar">
+      <div class="top-inner">
+        <a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark" aria-hidden="true">Д</span><span>ТЕКСТ ДЛЯ ЗАМЕНЫ</span></a>
+        <form class="search" action="index.html#catalog" method="get"><span class="search-icon" aria-hidden="true">⌕</span><label class="sr-only" for="catalog-search">Поиск по каталогу</label><input id="catalog-search" type="search" name="q" placeholder="Поиск по каталогу"></form>
+        <span class="topspacer"></span>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню"><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Навигация" hidden>
+        <a href="index.html#catalog">Каталог</a><a href="index.html#about-card">Обо мне</a><a href="index.html#contact-card">Контакты</a>
+      </nav>
+    </header>
+
+    <div class="shell">
+      <aside class="nav" aria-label="Разделы сайта">
+        <a class="navitem" href="index.html#page-title"><span class="navicon" aria-hidden="true">◎</span>Мастерская</a>
+        <a class="navitem navitem--active" href="index.html#catalog"><span class="navicon" aria-hidden="true">▣</span>Каталог</a>
+        <div class="navline"></div>
+        <p class="navsmall">Сундуки ручной работы</p>
+      </aside>
+
+      <main class="page product-page" id="main">
+        <section class="cover cover--compact" aria-label="Обложка мастерской — временная заглушка"><span class="cover-caption">Обложка мастерской · временная заглушка</span><span class="cover-mark" aria-hidden="true">✳</span></section>
+        <section class="grouphead" aria-label="Мастерская"><a class="groupname" href="index.html#page-title">Сундуки ручной работы</a></section>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><a href="index.html#catalog">Каталог</a><span aria-hidden="true">/</span><span id="breadcrumb-title">Сундук</span></nav>
+        <div class="product-detail" id="product-detail" aria-live="polite">
+          <section class="product-gallery" aria-label="Изображения товара">
+            <div class="detail-media detail-media--main"><span class="placeholder-caption">Изображение модели</span><span class="placeholder-icon" aria-hidden="true">✳</span></div>
+            <div class="detail-media detail-media--small"><span class="placeholder-caption">Деталь изделия</span><span class="placeholder-icon" aria-hidden="true">✳</span></div>
+            <div class="detail-media detail-media--small detail-media--warm"><span class="placeholder-caption">Отделка и фурнитура</span><span class="placeholder-icon" aria-hidden="true">✳</span></div>
+          </section>
+          <section class="product-info" aria-labelledby="product-title">
+            <p class="product-category" id="product-category">МОДЕЛЬ</p>
+            <h1 id="product-title">Сундук ручной работы</h1>
+            <p class="product-description" id="product-description"></p>
+            <p class="detail-price" id="product-price"></p>
+            <dl class="spec-list" id="product-specs"></dl>
+            <a class="btn btn-primary" href="#order">Оставить заявку</a>
+            <p class="product-info__note">Стоимость и срок изготовления уточним после обсуждения деталей.</p>
+          </section>
+        </div>
+        <section class="card order-section" id="order" aria-labelledby="order-title">
+          <div class="order-heading"><h2 id="order-title">Заявка на изготовление</h2><p>Оставьте контакты, и мы обсудим детали заказа.</p></div>
+          <form class="request-form" id="request-form">
+            <input type="hidden" name="product" id="request-product" value="Сундук ручной работы">
+            <label for="customer-name">Ваше имя <span aria-hidden="true">*</span><input id="customer-name" name="name" autocomplete="name" required maxlength="80" placeholder="Как к вам обращаться"></label>
+            <label for="customer-contact">Телефон или электронная почта <span aria-hidden="true">*</span><input id="customer-contact" name="contact" autocomplete="on" required maxlength="120" placeholder="Контакт для ответа"></label>
+            <label for="customer-message">Комментарий <span class="optional">необязательно</span><textarea id="customer-message" name="message" rows="4" maxlength="1000" placeholder="Размер, отделка или ваши пожелания"></textarea></label>
+            <button class="btn btn-primary" type="submit">Подготовить письмо</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-privacy">После отправки откроется почтовое приложение с готовой заявкой.</p>
+          </form>
+        </section>
+        <p class="back-link"><a href="index.html#catalog">← Вернуться в каталог</a></p>
+      </main>
+      <aside class="info-column" aria-label="О мастерской и контакты">
+        <section class="card info-card" id="about-card"><h2>Обо мне</h2><p id="about-copy">Информация о мастере будет добавлена позже.</p></section>
+        <section class="card info-card" id="contact-card"><h2>Контактная информация</h2><div class="info-row"><span class="info-icon" aria-hidden="true">☎</span><span data-contact="phone">Добавить телефон</span></div><div class="info-row"><span class="info-icon" aria-hidden="true">✉</span><span data-contact="email">Добавить электронную почту</span></div></section>
+        <section class="card info-card channels-card" aria-labelledby="channels-title"><h2 id="channels-title">Каналы</h2><div class="info-row"><span class="info-icon" aria-hidden="true">➤</span><span data-channel="telegram">Добавить ссылку на Telegram</span></div><div class="info-row"><span class="info-icon" aria-hidden="true">◉</span><span data-channel="vk">Добавить ссылку ВКонтакте</span></div><div class="info-row"><span class="info-icon" aria-hidden="true">↗</span><span data-channel="other">Добавить другую ссылку</span></div></section>
+      </aside>
+    </div>
+  </body>
+</html>
